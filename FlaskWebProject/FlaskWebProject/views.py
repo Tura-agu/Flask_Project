@@ -48,4 +48,8 @@ def about():
 
 @app.route('/bar-chart')
 def barchart():
-    return render_template('chart.html')
+    return render_template(
+        'chart.html',
+        title='Bar-Chart',
+        year=datetime.now().year,
+    )
