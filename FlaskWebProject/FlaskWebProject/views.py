@@ -45,3 +45,7 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/bar-chart')
+def barchart():
+    return render_template('chart.html')
